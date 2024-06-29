@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #001F3F;
+}
+
+.stpContainer{
+    padding: 25px;
+    width: 35vmax;
+    border-radius: 15px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#stpDuration{
+    font-size: 2.2vmax;
+    color: #fff;
+    padding: 20px;
+    font-weight: 500;
+    font-family: "Orbitron", sans-serif;
+}
+
+.Buttons{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.Buttons button{
+    height: 4vmax;
+    width: 7vmax;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.8vmax;
+    transition:transform 0.3s ease-in-out;
+    flex-grow: 1;
+}
+
+.Buttons button:hover{
+    transform: scale(1.1);
+}
+
+#start{
+    background: rgb(26,255,0);
+}
+
+#lap{
+    background: rgb(255, 68, 0);
+}
+
+#reset{
+    background: rgb(25, 0, 255);
+}
+
+#stop{
+    background: red;
+}
+
+/* #stop,#reset{
+    background: rgb(26,255,0);
+} */
+
+#laps{
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+}
+
+#laps::-webkit-scrollbar { visibility: hidden; }
+
+#laps li{
+    font-size: 2.2vmax;
+    padding: 10px;
+    color: rgb(221,15,15);
+}

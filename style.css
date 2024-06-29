@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    /* background: #001524; */
+    background: #fff;
+}
+
+/* navbar */
+.nav-bar{
+    background: #0b74bf; 
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    overflow-x: hidden;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 15vw;
+}
+
+.menu li a{
+    font-size: 2vmax;    
+    font-weight: 500;
+    color: black;
+}
+
+#clk a:hover{
+    color: #fff;
+    transition-duration: 1s;
+    text-decoration: underline;
+}
+
+#arm a:hover{
+    color: #fff;
+    transition-duration: 1s;
+    text-decoration: underline;
+}
+
+#spw a:hover{
+    color: #fff;
+    transition-duration: 1s;
+    text-decoration: underline;
+}
+
+/* clock */
+
+.clock{
+    min-height: calc(100vh-150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.date, .time{
+    font-size: 5vmax;
+    margin: auto;
+    font-weight: 700;
+}
+
+.date{
+    font-family: "Shadows Into Light";
+    color: #001524;
+    margin-top: 50px;
+}
+
+.time{
+    font-family: "Orbitron", sans-serif;
+    color: red;
+}
+
+
+/* analog clock */
+
+#clockContainer{
+    margin: 35px auto;
+    height: 40vw;
+    width: 40vw;
+    background: url("clock.png") no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+#hour,#minute,#second{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour{
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+}
+
+
+#minute{
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+
+#second{
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+}
+
+
+/* alarm */
+
